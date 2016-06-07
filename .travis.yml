@@ -7,7 +7,7 @@ services:
 
 before_install:
   - docker pull node:6.2.1
-  - docker run -d node /bin/sh -c "node -v"
+  - docker run node:6.2.1 /bin/sh -c "node -v"
   - docker ps -a
   - npm -v
   - node -v
